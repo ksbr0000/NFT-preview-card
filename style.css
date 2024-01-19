@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: hsl(217, 54%, 11%);
+  --card-bg-color: hsl(216, 50%, 16%);
+  --line-color: hsl(215, 32%, 27%);
+  --white-color: hsl(0, 0%, 100%);
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+}
+
+body {
+  display: flex;
+  background-color: var(--main-bg-color);
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg-color);
+  border-radius: 2rem;
+  width: 350px;
+  font-family: "Outfit", sans-serif;
+  height: 600px;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+}
+
+.image {
+  height: 310px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: var(--line-color) solid;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+}
+h1 {
+  font-size: large;
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+p {
+  color: var(--Soft-blue);
+  font-weight: 300;
+}
+
+.creator-container {
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.avatar {
+  width: 30px;
+  border: white solid;
+  border-radius: 2rem;
+}
+
+.data-container {
+  display: flex;
+  gap: 100px;
+
+  align-items: center;
+}
+
+.nft {
+  display: flex;
+  gap: 10px;
+}
+.nft > p {
+  color: var(--Cyan);
+}
+
+.time {
+  display: flex;
+  gap: 10px;
+}
+span {
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+span:hover {
+  color: var(--Cyan);
+}
+h1:hover {
+  color: var(--Cyan);
+}
+
+.image:hover {
+  fill: var(--Cyan);
+  background-image: url('<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/><path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/></g></svg>');
+}
